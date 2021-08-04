@@ -10,8 +10,12 @@
   --paragraph: #a7a9be;
   --button-hover: #fed9da;
 }
-a, [type="button"]:hover {
+a,
+[type="button"]:hover {
   cursor: pointer;
+}
+[type="button"]:hover {
+  background-color: var(--button-hover);
 }
 * {
   box-sizing: border-box;
@@ -84,46 +88,70 @@ footer {
 #sub-container-projects h2 {
   width: 519px;
   line-height: 56px;
-  font-size: 48px
+  font-size: 48px;
 }
-#sub-container-projects-images div{
-  margin: 5px 10px;
+/* margins */
+.mb-15 {
+  margin-bottom: 15px;
 }
-
+/*  */
 .first-project {
   width: 1198px;
   height: 540px;
 }
-.first-project div {
-  z-index: 1;
-  margin-left: 20px;
+
+.other-projects {
+  width: 598px;
+  height: 464px;
 }
+.first-project .background,
+.other-projects .background {
+  z-index: -1;
+  position: absolute;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+.container-other-projects {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
 .alert-message {
   background-color: var(--background);
   color: var(--white);
-  width: 623px;
   padding: 18px;
-  left: 323px;
-  position: absolute;
-  bottom: -376px;
+  z-index: 1;
+  margin-block: 100px;
 }
+
+.alert-w-large {
+  width: 623px;
+  height: 388px;
+}
+.alert-w-small {
+  width: 511px;
+  height: 316px;
+}
+
 .alert-title {
   font-family: Nunito;
   font-size: 24px;
   padding-top: 20px;
   line-height: 32px;
 }
-.alert-message p  {
+.alert-text-large {
   width: 500px;
+}
+.alert-message p {
   margin-bottom: 70px;
+  margin-right: 45px;
 }
 
-#sub-container-projects-images div .small{
+#sub-container-projects-images div .small {
   float: left;
   width: 599px;
   height: 464px;
 }
-
 
 .bg-gradient {
   background: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
