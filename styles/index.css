@@ -122,15 +122,14 @@ footer {
   padding: 18px;
   z-index: 1;
   margin-block: 100px;
+  box-shadow: 12px 16px 32px rgba(0, 0, 0, 0.25);
 }
 
 .alert-w-large {
   width: 623px;
-  height: 388px;
 }
 .alert-w-small {
   width: 511px;
-  height: 316px;
 }
 
 .alert-title {
@@ -143,8 +142,13 @@ footer {
   width: 500px;
 }
 .alert-message p {
-  margin-bottom: 70px;
-  margin-right: 45px;
+  margin-right: 40px;
+}
+
+.alert-message input {
+  margin-top: 70px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 #sub-container-projects-images div .small {
@@ -263,7 +267,7 @@ h2 {
   border: solid var(--button-background) 2px;
   padding: 10px;
   height: 48px;
-  margin: 0px 5px;
+  margin: 0px;
   font-size: 16px;
 }
 .btn-orange {
@@ -377,9 +381,29 @@ h2 {
   line-height: 24px;
   font-weight: bold;
 }
-.more-services span {
-  margin-left: 5px;
+.more-services span, .more-projects span {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
+.more-projects {
+  background-color: var(--white);
+  color: var(--background);
+  border: var(--background) solid 2px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Nunito;
+  line-height: 24px;
+  padding: 10px 20px;
+  align-self: center;
+  width: 297px;
+  text-align: center;
+  margin-top: 56px;
+}
+
 /* wrapper */
 .wrapper {
   max-width: 1366px;
