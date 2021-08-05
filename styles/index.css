@@ -452,6 +452,13 @@ h2 {
 #curriculum-alt {
   display: none;
 }
+#copyright {
+  display: flex;
+}
+#mobile-menu, #close-mobile-menu {
+  display: none;
+}
+
 /* Media querys */
 
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
@@ -560,11 +567,12 @@ h2 {
   }
   #curriculum-alt {
     display: block;
+    margin: 10px;
   }
 
   nav,
   main #container-main {
-    padding: 0px 10px;
+    padding: 5px 10px;
   }
   #container-main {
     flex-direction: column-reverse;
@@ -652,7 +660,7 @@ h2 {
   }
   .form-contacts {
     width: unset;
-    padding: 0px  10px 10px
+    padding: 0px 10px 10px;
   }
   #container-footer,
   #container-services,
@@ -662,20 +670,21 @@ h2 {
   .wrapper {
     max-width: unset;
   }
-  .services, .testimonials {
+  .services,
+  .testimonials {
     width: 340px;
     margin: 0;
-  }  
+  }
   .container {
     margin: 0;
     padding: 0 10px;
   }
 
-  .testimonials p{
+  .testimonials p {
     font-size: 20px;
     line-height: 32px;
   }
-  h2{
+  h2 {
     font-size: 32px !important;
     font-family: Lora;
     font-weight: normal;
@@ -697,5 +706,37 @@ h2 {
   #bg-image {
     height: 184px;
     content: "";
+  }
+  #copyright {
+    text-align: center;
+    flex-direction: column;
+  }
+  .mobile-menu-img {
+    width: unset !important;
+    margin: auto;
+  }
+  .show {
+    background-color: var(--background);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    margin: 0 auto;
+    font-size: 32px;
+    padding-left: 0px;
+    top: 0;
+    left: 0;
+  }
+  #logo-menu-mobile {
+    width: 50px;
+    align-self: center;
+  }
+  #menu span {
+    padding: 5px 10px;
+  }
+  #mobile-menu, #close-mobile-menu {
+    display: inline-block;
   }
 }

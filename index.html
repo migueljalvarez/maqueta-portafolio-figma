@@ -16,9 +16,16 @@
     <nav id="navbar" class="wrapper">
       <div class="container-nav">
         <div class="header-logo">
+          <span id="mobile-menu">
+            <img class="mobile-menu-img" src="./src/assets/svg/icon-menu.svg" alt="mobile-menu" width="24" height="24">
+          </span>
           <img src="./src/assets/svg/logo.svg" alt="logo">
         </div>
-        <ul class="container-menu">
+        <ul id="menu" class="container-menu">
+          <span id="close-mobile-menu">
+            <img class="mobile-menu-img" src="./src/assets/svg/icon-multiply.svg" alt="mobile-menu" width="24" height="24">
+            <img id="logo-menu-mobile" src="./src/assets/svg/logo.svg" alt="logo">
+          </span>
           <li> <a href="#"> Hola</a></li>
           <li> <a href="#"> Proyectos </a> </li>
           <li> <a href="#"> Servicios</a></li>
@@ -272,7 +279,10 @@
       </div>
       <div id="copyright">
         <p>
-          Hecho con <span><i class="fas fa-heart"></i></span> Antonio. Copyright 2021 <span>-</span> Todos los derechos
+          Hecho con <span><i class="fas fa-heart"></i></span> Antonio.
+        </p>
+        <p>
+          Copyright 2021 <span>-</span> Todos los derechos
           reservados.
         </p>
       </div>
@@ -284,6 +294,7 @@
     </div>
 
   </footer>
+  <script src="./index.js"></script>
 </body>
 
 </html>
